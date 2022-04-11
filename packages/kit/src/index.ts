@@ -1,14 +1,18 @@
 import { Plugin, Component } from 'vue';
 import * as components from './components';
 
+type ComponentModule = {
+  default: Component
+}
+
 type Components = {
-  [name: string]: Component
+  [name: string]: ComponentModule
 }
 
 const UiKit: Plugin = {
   install(App) {
-    Object.entries(components as Components).forEach(([name, component]) => {
-      App.component(name, component);
+    Object.entries(components as Components).forEach(([name, componentModule]) => {
+      App.component(name, componentModule.default);
     })
   }
 }
