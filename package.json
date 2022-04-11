@@ -1,0 +1,9 @@
+{
+  "name": "crm-b2c-ui",
+  "private": true,
+  "description": "CRM B2C UI",
+  "scripts": {},
+  "workspaces": [
+    "packages/*"
+  ]
+}
