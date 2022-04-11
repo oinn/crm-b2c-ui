@@ -11,3 +11,19 @@ export default defineComponent({
   name: 'UiApp'
 });
 </script>
+
+<style lang="scss">
+.ui-app {
+  display: flex;
+  flex-direction: column;
+
+  font-family: Rostelecom Basis, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+</style>
