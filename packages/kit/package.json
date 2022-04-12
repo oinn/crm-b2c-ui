@@ -29,5 +29,6 @@
   "types": "dist/ui-kit.es.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "web-types": "dist/web-types.json"
 }
