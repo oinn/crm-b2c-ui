@@ -5,9 +5,16 @@
   "description": "CRM B2C UI Kit",
   "scripts": {
     "dev": "vite build --mode development",
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint --ext .js,.ts,.vue . --ignore-path=.gitignore"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
     "sass": "^1.50.0",
     "vue": "^3.2.25"
   },

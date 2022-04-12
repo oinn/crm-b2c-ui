@@ -13,8 +13,8 @@ const UiKit: Plugin = {
   install(App) {
     Object.entries(components as Components).forEach(([name, componentModule]) => {
       App.component(name, componentModule.default);
-    })
-  }
-}
+    });
+  },
+};
 
 export default UiKit;

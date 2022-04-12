@@ -1,1 +1,1 @@
-export * as UiApp from './UiApp.vue';
+export { default as UiApp } from './UiApp.vue';
