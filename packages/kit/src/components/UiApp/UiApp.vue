@@ -16,6 +16,7 @@ export default defineComponent({
 .ui-app {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 
   font-family: Rostelecom Basis, sans-serif;
   font-size: 14px;
