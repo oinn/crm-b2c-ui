@@ -1,7 +1,6 @@
-declare module '@crm-b2c-ui/kit' {
-  import { Plugin } from 'vue';
+import { Plugin } from 'vue';
 
-  const UiKit: Plugin;
-  // noinspection JSUnusedGlobalSymbols
-  export default UiKit;
-}
+// noinspection JSUnusedGlobalSymbols
+declare const UiKit: Plugin;
+// noinspection JSUnusedGlobalSymbols
+export default UiKit;
