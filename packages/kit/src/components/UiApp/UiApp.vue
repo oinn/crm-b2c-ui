@@ -18,7 +18,7 @@ export default defineComponent({
   flex-direction: column;
   overflow: auto;
 
-  font-family: Rostelecom Basis, sans-serif;
+  font-family: Rostelecom Basis, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
