@@ -1,0 +1,31 @@
+$headers:
+  "h1" 26px 36px 700,
+  "h2" 22px 30px 700,
+  "h3" 18px 26px 700,
+  "h4" 16px 22px 700,
+  "h4-m" 16px 22px 500,
+  "h4-s" 16px 22px 400;
+
+@each $abbr, $font-size, $line-height, $font-weight in $headers {
+  .ui-#{$abbr} {
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height;
+  }
+}
+
+$paragraphs:
+  "text" 400,
+  "text-m" 500,
+  "text-l" 600;
+
+@each $abbr, $font-weight in $paragraphs {
+  .ui-#{$abbr} {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $font-weight;
+    letter-spacing: 0.005em;
+    line-height: 20px;
+  }
+}

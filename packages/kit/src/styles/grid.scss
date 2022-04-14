@@ -1,0 +1,98 @@
+@import "src/styles/config";
+$directions: (
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+  "x": "right" "left",
+  "y": "top" "bottom"
+);
+
+@for $i from 0 through 8 {
+  @each $name, $param in ("m" "margin", "p" "padding") {
+    @each $abbr, $dirs in $directions {
+      .ui-#{$name}#{$abbr}-#{$i} {
+        @each $dir in $dirs {
+          #{$param}-#{$dir}: $module * $i !important;
+        }
+      }
+    }
+
+    .ui-#{$name}a-#{$i} {
+      #{$param}: $module * $i !important;
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  @each $abbr, $dirs in $directions {
+    .ui-m#{$abbr}-n#{$i} {
+      @each $dir in $dirs {
+        margin-#{$dir}: -$module * $i !important;
+      }
+    }
+  }
+
+  .ui-ma-n#{$i} {
+    margin: -$module * $i !important;
+  }
+}
+
+.ui-full-height {
+  height: 100% !important;
+}
+.ui-full-width {
+  width: 100% !important;
+}
+
+.ui-flex {
+  display: flex !important;
+}
+.ui-inline-flex {
+  display: inline-flex !important;
+}
+
+.ui-flex-column {
+  flex-direction: column !important;
+}
+.ui-flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+.ui-flex-row {
+  flex-direction: row !important;
+}
+.ui-flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.ui-justify-start {
+  justify-content: flex-start !important;
+}
+.ui-justify-center {
+  justify-content: center !important;
+}
+.ui-justify-end {
+  justify-content: flex-end !important;
+}
+.ui-justify-space-between {
+  justify-content: space-between !important;
+}
+.ui-justify-space-around {
+  justify-content: space-around!important;
+}
+
+.ui-align-start {
+  align-items: start !important;
+}
+.ui-align-end {
+  align-items: end !important;
+}
+.ui-align-center {
+  align-items: center !important;
+}
+.ui-align-baseline {
+  align-items: baseline !important;
+}
+.ui-align-stretch {
+  align-items: stretch !important;
+}
