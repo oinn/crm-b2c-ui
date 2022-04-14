@@ -1,3 +1,5 @@
+const jestPlugin = require('eslint-plugin-jest');
+
 module.exports = {
   root: true,
   env: {
@@ -48,6 +50,17 @@ module.exports = {
       files: ['src/components/**/index.ts'],
       rules: {
         'import/prefer-default-export': ['off', {}],
+      },
+    },
+    {
+      files: ['**/*.spec.ts'],
+      env: {
+        jest: true,
+      },
+      plugins: ['jest'],
+      ...jestPlugin.configs.recommended,
+      rules: {
+        'import/no-extraneous-dependencies': ['off', { devDependencies: false }],
       },
     },
   ],

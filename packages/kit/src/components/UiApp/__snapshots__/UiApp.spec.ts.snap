@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UiApp Rendered correctly 1`] = `"<div class=\\"ui-app\\">Default slot text</div>"`;
