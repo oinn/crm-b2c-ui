@@ -1,5 +1,6 @@
 import { Plugin } from 'vue';
 import * as components from './components';
+import './styles/index.scss';
 
 type Components = typeof components
 
