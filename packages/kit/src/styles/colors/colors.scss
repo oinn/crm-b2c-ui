@@ -1,0 +1,34 @@
+$colors: (
+  "light": (
+    "white": rgba(255, 255, 255, 1),
+    "black": rgba(16, 24, 40, 1),
+    "purple": rgba(119, 0, 255, 1),
+    "orange": rgba(255, 79, 18, 1),
+    "navy-blue": rgba(56, 74, 123, 1),
+    "red": rgba(172, 41, 75, 1),
+    "yellow": rgba(245, 191, 67, 1),
+    "pink": rgba(242, 177, 180, 1),
+    "green": rgba(41, 204, 163, 1),
+    "blue": rgba(47, 154, 255, 1),
+    "success": rgba(0, 211, 89, 1),
+    "warning": rgba(255, 182, 8, 1),
+    "error": rgba(255, 12, 12, 1),
+    "info": rgba(0, 66, 237, 1)
+  ),
+  "dark": (
+    "white": rgba(255, 255, 255, 1),
+    "black": rgba(16, 24, 40, 1),
+    "purple": rgba(148, 102, 255, 1),
+    "orange": rgba(255, 94, 45, 1),
+    "navy-blue": rgba(90, 104, 141, 1),
+    "red": rgba(172, 41, 75, 1),
+    "yellow": rgba(249, 194, 69, 1),
+    "pink": rgba(245, 193, 196, 1),
+    "green": rgba(22, 217, 166, 1),
+    "blue": rgba(64, 162, 255, 1),
+    "success": rgba(38, 218, 114, 1),
+    "warning": rgba(255, 202, 0, 1),
+    "error": rgba(255, 71, 71, 1),
+    "info": rgba(64, 117, 255, 1)
+  )
+);

@@ -1,0 +1,25 @@
+@import "colors";
+
+@function get-color($theme, $color, $opacity) {
+  $themed-colors: map-get($colors, $theme);
+  $color: map-get($themed-colors, $color);
+  @return change-color($color, $alpha: $opacity);
+}
+
+$themed-elements: (
+  "light": (
+    "background": get-color("light", "white", 1),
+    "text-primary": get-color("light", "black", 1),
+    "text-secondary": get-color("light", "black", 0.6),
+  ),
+  "dark": (
+    "background": get-color("dark", "black", 1),
+    "text-primary": get-color("dark", "white", 1),
+    "text-secondary": get-color("dark", "white", 0.6),
+  ),
+);
+
+@function get-element-color($theme, $element) {
+  $elements: map-get($themed-elements, $theme);
+  @return map-get($elements, $element);
+}
