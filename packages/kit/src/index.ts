@@ -3,9 +3,21 @@ import * as components from './components';
 import './styles/index.scss';
 
 type Components = typeof components
+export interface UiProperties {
+  theme: {
+    isDark: boolean,
+  },
+}
 
 const UiKit: Plugin = {
   install(App) {
+    // eslint-disable-next-line no-param-reassign
+    App.config.globalProperties.$ui = {
+      theme: {
+        isDark: false,
+      },
+    } as UiProperties;
+
     Object.entries(components as Components).forEach(([name, component]) => {
       App.component(name, component);
     });
