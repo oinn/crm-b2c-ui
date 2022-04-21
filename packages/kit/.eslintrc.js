@@ -42,7 +42,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['vite.config.ts'],
+      files: ['vite.config.ts', 'jest.setup.ts'],
       rules: {
         'import/no-extraneous-dependencies': ['off', {}],
       },
