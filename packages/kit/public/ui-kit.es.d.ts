@@ -1,6 +1,12 @@
+// noinspection JSUnusedGlobalSymbols
+
 import { Plugin } from 'vue';
 
-// noinspection JSUnusedGlobalSymbols
+export interface UiProperties {
+  theme: {
+    isDark: boolean,
+  },
+}
+
 declare const UiKit: Plugin;
-// noinspection JSUnusedGlobalSymbols
 export default UiKit;
