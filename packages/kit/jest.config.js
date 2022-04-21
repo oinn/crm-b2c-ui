@@ -7,5 +7,6 @@ module.exports = {
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^.+\\.(css|scss|less)$': '<rootDir>/src/mocks/style.js',
   },
 };
