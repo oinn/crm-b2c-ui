@@ -3,7 +3,7 @@ import UiToolbar from './UiToolbar.vue';
 
 type Props = InstanceType<typeof UiToolbar>['$props'];
 
-describe('UiApp', () => {
+describe('UiToolbar', () => {
   // Preparation
   let mountFunction: (options?: Record<string, unknown>) => VueWrapper;
   beforeEach(() => {
