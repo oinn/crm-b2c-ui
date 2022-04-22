@@ -30,6 +30,7 @@ export default defineComponent({
 @import "@/styles/colors/index.scss";
 
 .ui-app {
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow: auto;
