@@ -27,5 +27,6 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.0",
     "vue-tsc": "^0.29.8"
-  }
+  },
+  "web-types": "../kit/dist/web-types.json"
 }
