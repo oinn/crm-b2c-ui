@@ -64,5 +64,11 @@ module.exports = {
         'import/no-extraneous-dependencies': ['off', { devDependencies: false }],
       },
     },
+    {
+      files: ['src/mixins/*.spec.ts'],
+      rules: {
+        'vue/one-component-per-file': ['off', {}],
+      },
+    },
   ],
 };

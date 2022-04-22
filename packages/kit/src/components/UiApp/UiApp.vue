@@ -1,18 +1,34 @@
 <template>
-  <div class="ui-app">
+  <div :class="classes">
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { themeable } from '@/mixins';
 
 export default defineComponent({
   name: 'UiApp',
+  mixins: [themeable],
+  computed: {
+    classes() {
+      return {
+        'ui-app': true,
+        ...this.themeClasses,
+      };
+    },
+  },
+  created() {
+    this.$ui.theme.isDark = this.dark || false;
+  },
 });
 </script>
 
 <style lang="scss">
+// noinspection CssUnknownTarget
+@import "@/styles/colors/index.scss";
+
 .ui-app {
   display: flex;
   flex-direction: column;
@@ -22,6 +38,14 @@ export default defineComponent({
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  &.ui-theme--light {
+    color: get-element-color("light", "text-primary");
+  }
+
+  &.ui-theme--dark {
+    color: get-element-color("dark", "text-primary");
+  }
 
   * {
     box-sizing: border-box;

@@ -7,7 +7,25 @@
     "html": {
       "elements": [
         {
-          "name": "ui-app"
+          "name": "ui-app",
+          "attributes": [
+            {
+              "name": "dark",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            },
+            {
+              "name": "light",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            }
+          ]
         }
       ]
     }
