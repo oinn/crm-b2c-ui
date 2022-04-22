@@ -7,6 +7,12 @@ export interface UiProperties {
   theme: {
     isDark: boolean,
   },
+  uiMainOffset: {
+    top: number,
+    right: number,
+    bottom: number,
+    left: number,
+  }
 }
 
 const UiKit: Plugin = {
@@ -15,6 +21,12 @@ const UiKit: Plugin = {
     App.config.globalProperties.$ui = {
       theme: {
         isDark: false,
+      },
+      uiMainOffset: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
       },
     } as UiProperties;
 
