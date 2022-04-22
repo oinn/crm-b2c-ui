@@ -40,10 +40,14 @@ export default defineComponent({
   line-height: 20px;
 
   &.ui-theme--light {
+    background-color: get-element-color("light", "background");
+
     color: get-element-color("light", "text-primary");
   }
 
   &.ui-theme--dark {
+    background-color: get-element-color("dark", "background");
+
     color: get-element-color("dark", "text-primary");
   }
 
