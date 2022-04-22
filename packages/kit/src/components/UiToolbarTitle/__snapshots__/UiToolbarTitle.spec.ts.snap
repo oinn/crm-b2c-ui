@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UiToolbarTitle Rendered correctly 1`] = `"<div class=\\"ui-toolbar-title\\">Default slot text</div>"`;
