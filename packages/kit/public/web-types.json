@@ -26,6 +26,53 @@
               }
             }
           ]
+        },
+        {
+          "name": "ui-toolbar",
+          "attributes": [
+            {
+              "name": "dark",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            },
+            {
+              "name": "light",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            },
+            {
+              "name": "app",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            },
+            {
+              "name": "dense",
+              "description": "Decreasing toolbar height to 36px",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            },
+            {
+              "name": "rarefied",
+              "description": "Increasing toolbar height to 56px",
+              "value": {
+                "kind": "expression",
+                "type": "boolean",
+                "required": false
+              }
+            }
+          ]
         }
       ]
     }
