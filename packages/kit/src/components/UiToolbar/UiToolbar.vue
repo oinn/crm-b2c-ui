@@ -6,11 +6,11 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
-import { themeable } from '@/mixins';
+import { themeable, elevationable } from '@/mixins';
 
 export default defineComponent({
   name: 'UiToolbar',
-  mixins: [themeable],
+  mixins: [themeable, elevationable],
   props: {
     app: {
       type: Boolean as PropType<boolean>,
@@ -30,6 +30,7 @@ export default defineComponent({
       return {
         'ui-toolbar': true,
         ...this.themeClasses,
+        ...this.elevationClass,
         'ui-toolbar--app': this.app,
         'ui-toolbar--dense': this.dense,
         'ui-toolbar--rarefied': this.rarefied,
@@ -47,10 +48,9 @@ export default defineComponent({
 });
 </script>
 
+<!--suppress SassScssResolvedByNameOnly, CssUnknownTarget -->
 <style lang="scss">
-// noinspection CssUnknownTarget
 @import "@/styles/config.scss";
-// noinspection CssUnknownTarget
 @import "@/styles/colors/index.scss";
 
 .ui-toolbar {
