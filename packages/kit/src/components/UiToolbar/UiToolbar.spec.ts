@@ -49,4 +49,6 @@ describe('UiToolbar', () => {
 
     expect(wrapper.classes()).toContain('ui-toolbar--rarefied');
   });
+
+  // Don't have test for check rewriting this.$ui.uiMainOffsets global parameter.
 });

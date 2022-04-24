@@ -37,7 +37,12 @@ export default defineComponent({
     },
   },
   mounted() {
-    this.$ui.uiMainOffset.top = this.app ? this.$el.clientHeight : 0;
+    if (this.app) {
+      this.$ui.uiMainOffsets = {
+        ...this.$ui.uiMainOffsets,
+        top: this.$el.clientHeight,
+      };
+    }
   },
 });
 </script>
