@@ -28,6 +28,9 @@
           ]
         },
         {
+          "name": "ui-main"
+        },
+        {
           "name": "ui-toolbar",
           "attributes": [
             {
