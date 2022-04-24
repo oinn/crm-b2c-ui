@@ -63,12 +63,12 @@ export default defineComponent({
   color: inherit;
 
   &.ui-theme--light {
-    background-color: get-element-color("light", "background");
+    background-color: get-element-color("light", "toolbar");
 
     color: get-element-color("light", "text-primary")
   }
   &.ui-theme--dark {
-    background-color: get-element-color("dark", "background");
+    background-color: get-element-color("dark", "toolbar");
 
     color: get-element-color("dark", "text-primary")
   }
