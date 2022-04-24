@@ -34,6 +34,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   overflow: auto;
+  position: relative;
 
   font-family: Rostelecom Basis, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 14px;
