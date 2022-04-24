@@ -21,7 +21,7 @@ $themed-elements: (
     "background": get-color("dark", "black", 1),
     "text-primary": get-color("dark", "white", 1),
     "text-secondary": get-color("dark", "white", 0.6),
-    "toolbar": get-color("dark", "white", 0.05),
+    "toolbar": rgba-to-rgb(get-color("dark", "white", 0.05), get-color("dark", "black", 1)),
   ),
 );
 
