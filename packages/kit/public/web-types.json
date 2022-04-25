@@ -50,6 +50,14 @@
               }
             },
             {
+              "name": "elevation",
+              "value": {
+                "kind": "expression",
+                "type": ["string", "number"],
+                "required": true
+              }
+            },
+            {
               "name": "app",
               "value": {
                 "kind": "expression",
