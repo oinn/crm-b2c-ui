@@ -78,6 +78,7 @@ export default defineComponent({
     top: 0;
     right: 0;
     left: 0;
+    padding: 0 5 * $module;
   }
 
   &.ui-toolbar--dense {
